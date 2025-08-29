@@ -1,0 +1,9 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#f5e3ca"/>
+  <rect x="200" y="300" width="400" height="400" rx="200" fill="#e6b884"/>
+  <circle cx="350" cy="450" r="20" fill="#8a4f23"/>
+  <circle cx="450" cy="450" r="20" fill="#8a4f23"/>
+  <path d="M 320 520 Q 400 580 480 520" stroke="#8a4f23" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="850" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" fill="#8a4f23">Hero Portrait</text>
+  <text x="400" y="900" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" fill="#a5612a">Replace with your photo</text>
+</svg>

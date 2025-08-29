@@ -1,0 +1,6 @@
+# This is a placeholder for the hero portrait image.
+# Replace this file with your actual hero portrait image:
+# - Recommended size: 800x1000px
+# - File format: JPG
+# - Style: Warm, natural lighting with genuine expression
+# - Should show an approachable, professional but not corporate look

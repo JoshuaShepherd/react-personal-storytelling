@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 254 253 251; /* warm-50 */
+    --foreground: 138 79 35; /* warm-900 */
+    --card: 255 255 255;
+    --card-foreground: 138 79 35;
+    --popover: 255 255 255;
+    --popover-foreground: 138 79 35;
+    --primary: 90 115 90; /* sage-500 */
+    --primary-foreground: 246 248 246; /* sage-50 */
+    --secondary: 253 249 242; /* warm-100 */
+    --secondary-foreground: 138 79 35;
+    --muted: 250 240 224; /* warm-200 */
+    --muted-foreground: 165 97 42; /* warm-800 */
+    --accent: 247 232 211; /* cream-300 */
+    --accent-foreground: 138 79 35;
+    --destructive: 220 38 38;
+    --destructive-foreground: 254 253 251;
+    --border: 199 156 60; /* warm-600 */
+    --input: 227 233 227; /* sage-100 */
+    --ring: 90 115 90; /* sage-500 */
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-warm-300;
+  }
+  body {
+    @apply bg-warm-50 text-warm-900 leading-relaxed;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .story-section {
+    @apply py-16 lg:py-24;
+  }
+  
+  .story-container {
+    @apply max-w-4xl mx-auto px-6 lg:px-8;
+  }
+  
+  .story-wide-container {
+    @apply max-w-6xl mx-auto px-6 lg:px-8;
+  }
+  
+  .story-narrow-container {
+    @apply max-w-2xl mx-auto px-6 lg:px-8;
+  }
+  
+  .story-heading {
+    @apply text-3xl lg:text-4xl font-serif text-warm-900 leading-tight;
+  }
+  
+  .story-subheading {
+    @apply text-xl lg:text-2xl font-serif text-warm-800 leading-relaxed;
+  }
+  
+  .story-body {
+    @apply text-lg text-warm-700 leading-relaxed;
+  }
+  
+  .story-quote {
+    @apply text-2xl lg:text-3xl font-serif text-warm-900 leading-relaxed italic;
+  }
+  
+  .story-button-primary {
+    @apply bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full font-medium text-lg transition-colors duration-200 shadow-sm hover:shadow-md;
+  }
+  
+  .story-button-secondary {
+    @apply bg-transparent hover:bg-warm-100 text-warm-800 border-2 border-warm-400 hover:border-warm-500 px-8 py-4 rounded-full font-medium text-lg transition-all duration-200;
+  }
+  
+  .story-card {
+    @apply bg-white rounded-2xl shadow-sm border border-warm-200 p-8 transition-shadow duration-200 hover:shadow-md;
+  }
+
+  .mobile-cta-button {
+    @apply fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 lg:hidden;
+  }
+}
